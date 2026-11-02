@@ -1,0 +1,62 @@
+@'
+# Node.js
+node_modules/
+.pnpm-store/
+.next/
+out/
+dist/
+coverage/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Flutter / Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# ML datasets and experiments
+ml/datasets/*
+!ml/datasets/.gitkeep
+ml/experiments/*
+!ml/experiments/.gitkeep
+ml/notebooks/.ipynb_checkpoints/
+
+# Model artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
+*.safetensors
+
+# Video files
+*.mp4
+*.mkv
+*.avi
+*.mov
+'@ | Set-Content -Encoding utf8 .gitignore
